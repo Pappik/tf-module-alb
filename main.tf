@@ -31,3 +31,5 @@ resource "aws_lb" "main" {
   tags = merge(local.common_tags, { Name = "${var.env}-${var.subnets_name}-alb"} )
 
 }
+
+
